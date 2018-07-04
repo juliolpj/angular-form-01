@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  systemTitle = 'Template Driven Form 0.1';
+  systemDescrip = 'Instalar bootstrap, font-awesome, crear navbar';
 }
