@@ -7,9 +7,17 @@ import { User } from './user';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  systemTitle = 'Template Driven Form 0.6';
-  systemDescrip = 'Desplegar mensajes de error';
+  systemTitle = 'Template Driven Form 0.7';
+  systemDescrip = 'Validación de la lista de temas';
   temas = ['Angular', 'React', 'VueJs'];
+  temaTieneError = true;
+  userModel = new User('', 'rob@test.com', 584169295877, 'default', 'mañana', true);
 
-  userModel = new User('', 'rob@test.com', 584169295877, '', 'mañana', true);
+  validarTema(value) {
+    if (value === 'default') {
+      this.temaTieneError = true;
+    } else {
+      this.temaTieneError = false;
+    }
+  }
 }
