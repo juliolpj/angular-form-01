@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  systemTitle = 'Template Driven Form 0.2';
-  systemDescrip = 'Crear HTML del formulario';
+  systemTitle = 'Template Driven Form 0.3';
+  systemDescrip = 'Enlazar datos con ngForm';
   temas = ['Angular', 'React', 'VueJs'];
 }
