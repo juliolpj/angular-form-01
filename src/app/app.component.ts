@@ -8,7 +8,7 @@ import { User } from './user';
 })
 export class AppComponent {
   systemTitle = 'Template Driven Form 0.4';
-  systemDescrip = 'Enlazar datos a un modelo';
+  systemDescrip = 'Supervisar el estado y validaciones de los campos del formulario';
   temas = ['Angular', 'React', 'VueJs'];
 
   userModel = new User('Rob', 'rob@test.com', 584169295877, '', 'mañana', true);

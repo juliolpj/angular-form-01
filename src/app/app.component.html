@@ -18,16 +18,19 @@
 
         <div class="card-body">
           <form #userForm="ngForm">
-            <small>
-              {{ userForm.value | json }}
-              <hr />
-              {{ userModel | json }}
-            </small>
-            <div class="form-group">
-              <label for="">Nombre</label>
-              <input type="text" class="form-control" name="nombre" [(ngModel)]="userModel.nombre">
-            </div>
 
+          <div class="form-group">
+            <label for="">Nombre</label>
+            <input type="text" required #nombre="ngModel" class="form-control" name="nombre" [(ngModel)]="userModel.nombre">
+          </div>
+          <small>
+            {{ '| Untouched: ' + nombre.untouched }}
+            {{ '| Touched: ' + nombre.touched }}
+            {{ '| Valid: ' + nombre.valid }}
+            {{ '| Invalid: ' + nombre.invalid }}
+            {{ '| Pristine: ' + nombre.pristine }}
+            {{ '| Dirty: ' + nombre.dirty }}
+          </small>
             <div class="form-group">
               <label for="">Email</label>
               <input type="email" class="form-control" name="email" [(ngModel)]="userModel.email">
