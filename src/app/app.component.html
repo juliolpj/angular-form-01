@@ -18,7 +18,7 @@
 
         <div class="card-body">
           <form #userForm="ngForm">
-
+            {{ userForm.form.valid }}
             <div class="form-group">
               <label for="">Nombre</label>
               <input 
@@ -87,7 +87,7 @@
               <label for="" class="form-check-label">Recibir promociones</label>
             </div>
 
-            <button class="btn btn-primary btn-block">
+            <button [disabled]="userForm.form.invalid || temaTieneError" class="btn btn-primary btn-block">
               Enviar
             </button>
           </form>

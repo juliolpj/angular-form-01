@@ -7,11 +7,11 @@ import { User } from './user';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  systemTitle = 'Template Driven Form 0.7';
-  systemDescrip = 'Validación de la lista de temas';
+  systemTitle = 'Template Driven Form 0.8';
+  systemDescrip = 'Validación del formulario';
   temas = ['Angular', 'React', 'VueJs'];
   temaTieneError = true;
-  userModel = new User('', 'rob@test.com', 584169295877, 'default', 'mañana', true);
+  userModel = new User('Rob', 'rob@test.com', 584169295877, 'default', 'mañana', true);
 
   validarTema(value) {
     if (value === 'default') {
