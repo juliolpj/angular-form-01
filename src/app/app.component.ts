@@ -8,10 +8,11 @@ import { InscripcionService } from './inscripcion.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  systemTitle = 'Template Driven Form 0.9';
-  systemDescrip = 'Enviar los datos del formulario';
+  systemTitle = 'Template Driven Form 0.10';
+  systemDescrip = 'Express server para recibir datos del formulario';
   temas = ['Angular', 'React', 'VueJs'];
   temaTieneError = true;
+  formularioEnviado = false;
   userModel = new User('Rob', 'rob@test.com', 584169295877, 'default', 'mañana', true);
 
   constructor(private _InscripcionService: InscripcionService) {
@@ -26,6 +27,7 @@ export class AppComponent {
   }
 
   onSubmit() {
+    this.formularioEnviado = true;
     this._InscripcionService.inscribir(this.userModel)
     .subscribe(
         data => console.log('Succes !', data),

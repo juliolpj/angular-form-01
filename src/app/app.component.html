@@ -17,8 +17,9 @@
         </div>
 
         <div class="card-body">
-          <form #userForm="ngForm" novalidate (ngSubmit)="onSubmit()">
-            {{ userForm.form.valid }}
+          <form 
+            #userForm="ngForm" novalidate 
+            *ngIf="!formularioEnviado" (ngSubmit)="onSubmit()">
             <div class="form-group">
               <label for="">Nombre</label>
               <input 

@@ -4,7 +4,7 @@ import { User } from './user';
 
 @Injectable()
 export class InscripcionService {
-  _url = '';
+  _url = 'http://localhost:3000/inscribir';
   constructor(private _http: HttpClient) {
   }
 
