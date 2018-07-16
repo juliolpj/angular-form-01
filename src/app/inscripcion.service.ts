@@ -2,6 +2,9 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { User } from './user';
 
+import { catchError } from 'rxjs/operators';
+import { throwError } from 'rxjs';
+
 @Injectable()
 export class InscripcionService {
   _url = 'http://localhost:3000/inscribir';

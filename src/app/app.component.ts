@@ -8,8 +8,9 @@ import { InscripcionService } from './inscripcion.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  systemTitle = 'Template Driven Form 0.10';
-  systemDescrip = 'Express server para recibir datos del formulario';
+  systemTitle = 'Template Driven Form 0.11';
+  systemDescrip = 'Actualizar Angular CLI y dependencias a la verdión 6';
+
   temas = ['Angular', 'React', 'VueJs'];
   temaTieneError = true;
   formularioEnviado = false;
